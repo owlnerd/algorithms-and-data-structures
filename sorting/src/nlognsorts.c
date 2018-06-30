@@ -15,18 +15,18 @@
 
 
 /*
-    QUICK SORT - wrapper function, so I can call quick sort supplying only
-    array and length, instead of array, lower and upper bound.
+    QUICK SORT
+    ----------
 */    
+
+/*  Wrapper function, so I can call quick sort supplying only
+    array and length, instead of array, lower and upper bound. */
 void quick_sort(int *a, int n)
 {
     q_sort(a, 0, n - 1);
 }
 
-
-/*
-    QUICK SORT - actual algorithm.
-*/    
+/*  Actual sorting algorithm */
 void q_sort(int *a, int l, int u)
 {
     if (l >= u) return;
@@ -46,18 +46,16 @@ void q_sort(int *a, int l, int u)
 
 
 /*
-    MERGE SORT - wrapper function, so I can call merge sort supplying only
-    array and length, instead of array, lower and upper bound.
+    MERGE SORT
+    ----------
 */   
 void merge_sort(int *a, int n)
 {
     m_sort(a, 0, n - 1);
 }
 
-
-/*
-    MERGE SORT - actual algorithm.
-*/  
+/*  Wrapper function, so I can call merge sort supplying only
+    array and length, instead of array, lower and upper bound.  */  
 void m_sort(int *a, int l, int u)
 {
     if (l >= u) return;
@@ -68,10 +66,7 @@ void m_sort(int *a, int l, int u)
     merge(a, l, mid, u);
 }
 
-
-/*
-    MERGE helper function - executes merging of two sorted arrays.
-*/
+/*  Merge helper function - executes merging of two sorted arrays.  */
 void merge(int *a, int l, int mid, int u)
 {
     int *tmp = (int*)malloc((u - l + 1)  * sizeof(int));
