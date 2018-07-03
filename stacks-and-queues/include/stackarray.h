@@ -1,12 +1,12 @@
 #ifndef STACKARRAY_H_INCLUDED
 #define STACKARRAY_H_INCLUDED
+
 /*
     STACK_ARRAY structure
     ---------------------
-    Stack is implemented as an array. Capacity of the questackue is len.
+    Stack is implemented as an array. Capacity of the stackarray is len.
     Index of the top of the stack is contained in the top member value.
 */ 
-
 typedef struct {
     int top;
     int len;

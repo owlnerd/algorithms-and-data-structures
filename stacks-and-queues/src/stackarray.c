@@ -2,7 +2,7 @@
 /*
     STACK DATASTRUCTURE - ARRAY IMPLEMENTATION
     ------------------------------------------
-    Struct itself is defined in the header file. Functions are defined below.
+    Struct itself is defined in the header file. Operations are defined below.
 */
 
 

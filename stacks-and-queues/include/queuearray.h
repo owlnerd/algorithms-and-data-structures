@@ -1,5 +1,6 @@
 #ifndef QUESUARRAY_H_INCLUDED
 #define QUEUEARRAY_H_INCLUDED
+
 /*
     QUEUE_ARRAY structure
     ---------------------
@@ -8,7 +9,6 @@
     member variable, index position of the newest item is the value of
     tail member variable minus 1.
 */ 
-
 typedef struct {
     int head;
     int tail;
